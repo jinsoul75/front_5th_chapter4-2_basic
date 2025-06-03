@@ -5,8 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Tech Shop</title>
-
-    <!-- Google Fonts 최적화 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,55 +19,29 @@
         rel="stylesheet"
       />
     </noscript>
-
-    <!-- 메인 CSS 비동기 로딩 -->
-    <link
-      rel="stylesheet"
-      href="/css/styles.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="/css/styles.css" />
-    </noscript>
-
+    <link rel="stylesheet" href="/css/styles.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
     <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-PKK35GL5');
-    </script>
+
     <!-- End Google Tag Manager -->
 
     <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-    <script>
-      window.addEventListener('DOMContentLoaded', function () {
-        var s = document.createElement('script');
-        s.src =
-          '//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js';
-        s.async = true;
-        s.onload = function () {
-          cookieconsent.run({
-            notice_banner_type: 'simple',
-            consent_type: 'express',
-            palette: 'light',
-            language: 'en',
-            page_load_consent_levels: ['strictly-necessary'],
-            notice_banner_reject_button_hide: false,
-            preferences_center_close_button_hide: false,
-            page_refresh_confirmation_buttons: false,
-            website_name: 'Performance Course',
-          });
-        };
-        document.body.appendChild(s);
+    <script
+      type="text/javascript"
+      src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"
+      charset="UTF-8"
+    ></script>
+    <script type="text/javascript" charset="UTF-8">
+      cookieconsent.run({
+        notice_banner_type: 'simple',
+        consent_type: 'express',
+        palette: 'light',
+        language: 'en',
+        page_load_consent_levels: ['strictly-necessary'],
+        notice_banner_reject_button_hide: false,
+        preferences_center_close_button_hide: false,
+        page_refresh_confirmation_buttons: false,
+        website_name: 'Performance Course',
       });
     </script>
   </head>
@@ -111,44 +83,23 @@
       <img
         class="desktop"
         src="images/Hero_Desktop.webp"
-        srcset="
-          images/Hero_Desktop.webp 1440w,
-          images/Hero_Tablet.webp   768w,
-          images/Hero_Mobile.webp   375w
-        "
-        sizes="(min-width: 1200px) 1440px, (min-width: 768px) 768px, 375px"
         width="1440"
         height="600"
         alt="Hero Image"
-        loading="lazy"
       />
       <img
         class="mobile"
         src="images/Hero_Mobile.webp"
-        srcset="
-          images/Hero_Mobile.webp   375w,
-          images/Hero_Tablet.webp   768w,
-          images/Hero_Desktop.webp 1440w
-        "
-        sizes="(max-width: 767px) 375px, (max-width: 1199px) 768px, 1440px"
         width="375"
         height="667"
         alt="Hero Image"
-        loading="lazy"
       />
       <img
         class="tablet"
         src="images/Hero_Tablet.webp"
-        srcset="
-          images/Hero_Tablet.webp   768w,
-          images/Hero_Desktop.webp 1440w,
-          images/Hero_Mobile.webp   375w
-        "
-        sizes="(min-width: 768px) and (max-width: 1199px) 768px, (min-width: 1200px) 1440px, 375px"
         width="768"
         height="1024"
         alt="Hero Image"
-        loading="lazy"
       />
 
       <div class="hero-content">
@@ -177,9 +128,6 @@
                 height="200"
                 width="200"
                 alt="product: Penom Case"
-                loading="lazy"
-                srcset="images/vr1.webp 200w, images/vr1@2x.webp 400w"
-                sizes="(max-width: 600px) 100vw, 200px"
               />
             </div>
             <div class="product-info">
@@ -199,9 +147,6 @@
                 height="200"
                 width="200"
                 alt="product: Noise Cancelling Headphone"
-                loading="lazy"
-                srcset="images/vr2.webp 200w, images/vr2@2x.webp 400w"
-                sizes="(max-width: 600px) 100vw, 200px"
               />
             </div>
             <div class="product-info">
@@ -221,9 +166,6 @@
                 height="200"
                 width="200"
                 alt="product: Canon Digital SLR EOS Rebel T6"
-                loading="lazy"
-                srcset="images/vr3.webp 200w, images/vr3@2x.webp 400w"
-                sizes="(max-width: 600px) 100vw, 200px"
               />
             </div>
             <div class="product-info">
@@ -302,7 +244,29 @@
 
     <a href="#" id="open_preferences_center">Update cookies preferences</a>
 
-    <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript" src="/js/products.js"></script>
+    <script type="text/javascript" src="/js/main.js" defer></script>
+    <script type="text/javascript" src="/js/products.js" defer></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        var s = document.createElement('script');
+        s.src =
+          '//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js';
+        s.async = true;
+        s.onload = function () {
+          cookieconsent.run({
+            notice_banner_type: 'simple',
+            consent_type: 'express',
+            palette: 'light',
+            language: 'en',
+            page_load_consent_levels: ['strictly-necessary'],
+            notice_banner_reject_button_hide: false,
+            preferences_center_close_button_hide: false,
+            page_refresh_confirmation_buttons: false,
+            website_name: 'Performance Course',
+          });
+        };
+        document.body.appendChild(s);
+      });
+    </script>
   </body>
 </html>
