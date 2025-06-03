@@ -84,23 +84,44 @@
       <img
         class="desktop"
         src="images/Hero_Desktop.webp"
+        srcset="
+          images/Hero_Desktop.webp 1440w,
+          images/Hero_Tablet.webp   768w,
+          images/Hero_Mobile.webp   375w
+        "
+        sizes="(min-width: 1200px) 1440px, (min-width: 768px) 768px, 375px"
         width="1440"
         height="600"
         alt="Hero Image"
+        loading="lazy"
       />
       <img
         class="mobile"
         src="images/Hero_Mobile.webp"
+        srcset="
+          images/Hero_Mobile.webp   375w,
+          images/Hero_Tablet.webp   768w,
+          images/Hero_Desktop.webp 1440w
+        "
+        sizes="(max-width: 767px) 375px, (max-width: 1199px) 768px, 1440px"
         width="375"
         height="667"
         alt="Hero Image"
+        loading="lazy"
       />
       <img
         class="tablet"
         src="images/Hero_Tablet.webp"
+        srcset="
+          images/Hero_Tablet.webp   768w,
+          images/Hero_Desktop.webp 1440w,
+          images/Hero_Mobile.webp   375w
+        "
+        sizes="(min-width: 768px) and (max-width: 1199px) 768px, (min-width: 1200px) 1440px, 375px"
         width="768"
         height="1024"
         alt="Hero Image"
+        loading="lazy"
       />
 
       <div class="hero-content">
@@ -129,6 +150,9 @@
                 height="200"
                 width="200"
                 alt="product: Penom Case"
+                loading="lazy"
+                srcset="images/vr1.webp 200w, images/vr1@2x.webp 400w"
+                sizes="(max-width: 600px) 100vw, 200px"
               />
             </div>
             <div class="product-info">
@@ -148,6 +172,9 @@
                 height="200"
                 width="200"
                 alt="product: Noise Cancelling Headphone"
+                loading="lazy"
+                srcset="images/vr2.webp 200w, images/vr2@2x.webp 400w"
+                sizes="(max-width: 600px) 100vw, 200px"
               />
             </div>
             <div class="product-info">
@@ -167,6 +194,9 @@
                 height="200"
                 width="200"
                 alt="product: Canon Digital SLR EOS Rebel T6"
+                loading="lazy"
+                srcset="images/vr3.webp 200w, images/vr3@2x.webp 400w"
+                sizes="(max-width: 600px) 100vw, 200px"
               />
             </div>
             <div class="product-info">
